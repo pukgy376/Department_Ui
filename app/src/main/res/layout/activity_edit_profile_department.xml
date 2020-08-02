@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/blue"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/trans_white_rectangle"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/ImViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/lham"></ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/TV_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="id"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/TV_EditUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ic_personn"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="ชื่อหน่วยงาน"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/TV_EditPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="รหัสผ่าน"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/TV_EdtUSname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ic_face"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="ชื่อผู้ใช้งาน"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/TV_EdtTum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ic_home"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="ตำบล"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/TV_EdtDis"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ic_home"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="อำเภอ"
+            android:textSize="18dp" />
+
+        <EditText
+        android:id="@+id/TV_EditPro"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/mitr"
+        android:hint="จังหวัด"
+        android:textSize="20dp" />
+        <EditText
+            android:id="@+id/TV_EdtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_local_phonee"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/mitr"
+            android:hint="เบอร์ติดต่อ"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/mitr"
+                android:text="บันทึก"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_button"
+                android:fontFamily="@font/mitr"
+                android:text="ยกเลิก"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
